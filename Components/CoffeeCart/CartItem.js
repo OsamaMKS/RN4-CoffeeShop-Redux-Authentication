@@ -26,8 +26,8 @@ const CartItem = ({ item, removeItemFromCart }) => (
   </ListItem>
 );
 
-const mapDispatchToProps = dispatch => ({
-  removeItemFromCart: item => dispatch(removeItemFromCart(item))
+const mapDispatchToProps = (dispatch) => ({
+  removeItemFromCart: (item) => dispatch(removeItemFromCart(item)),
 });
 
 export default connect(null, mapDispatchToProps)(CartItem);
